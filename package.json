@@ -1,0 +1,42 @@
+{
+  "name": "decard-test",
+  "homepage": "https://github.com/dmitriybo/decard-test#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriybo/decard-test.git"
+  },
+  "scripts": {
+    "dev": "kill-port 3000 && ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc -p .",
+    "start": "node dist/index.js",
+    "example-pay-in": "ts-node src/examples/payIn.ts",
+    "example-pay-out": "ts-node src/examples/payOut.ts",
+    "example-send-webhook": "ts-node src/examples/webhook.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.35.0",
+    "@types/node": "^24.5.0",
+    "@types/prompts": "^2.4.9",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "kill-port": "^2.0.1",
+    "prettier": "^3.6.2",
+    "prompts": "^2.4.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.2",
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.2",
+    "hono": "^4.9.7",
+    "uuid": "^13.0.0"
+  }
+}

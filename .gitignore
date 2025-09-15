@@ -1,0 +1,9 @@
+.vscode/*
+!.vscode/launch.json
+!.vscode/*.code-snippets
+.DS_Store
+/dist/
+.idea
+
+node_modules/
+.env
