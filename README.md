@@ -2,6 +2,8 @@
 
 Это проект с примерами payin/payout для Decard с проверкой webhook-подписей.
 
+ТЗ: https://gamma.app/docs/Fullstack-Hero-Challenge-NodejsReact-Edition-dm1wq07niumv0p5
+
 ## Запуск
 1. Установите зависимости: `npm install`
 2. Скопируйте `.env.example` в `.env` и заполните ключи и секреты.
